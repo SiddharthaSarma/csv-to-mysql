@@ -56,6 +56,6 @@ const dumpInToDB = async () => {
     }
   }
   await Promise.all(promises);
-  connection.end();
+  await connection.end();
   console.log('done');
 };
